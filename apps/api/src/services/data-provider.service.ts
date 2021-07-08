@@ -29,7 +29,7 @@ export class DataProviderService {
     private readonly rakutenRapidApiService: RakutenRapidApiService,
     private readonly yahooFinanceService: YahooFinanceService
   ) {
-    this.rakutenRapidApiService.setPrisma(this.prisma);
+    this.rakutenRapidApiService?.setPrisma(this.prisma);
   }
 
   public async get(
@@ -57,9 +57,8 @@ export class DataProviderService {
 
     for (const symbol of ghostfolioScraperApiSymbols) {
       if (symbol) {
-        const ghostfolioScraperApiResult = await this.ghostfolioScraperApiService.get(
-          [symbol]
-        );
+        const ghostfolioScraperApiResult =
+          await this.ghostfolioScraperApiService.get([symbol]);
         response[symbol] = ghostfolioScraperApiResult[symbol];
       }
     }
