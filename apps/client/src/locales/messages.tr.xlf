@@ -167,7 +167,7 @@
       </trans-unit>
       <trans-unit id="4656883433287439415" datatype="html">
         <source>faq</source>
-        <target state="new">faq</target>
+        <target state="translated">SSS</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app-routing.module.ts</context>
           <context context-type="linenumber">9</context>
@@ -183,7 +183,7 @@
       </trans-unit>
       <trans-unit id="6703761340382395781" datatype="html">
         <source>features</source>
-        <target state="new">features</target>
+        <target state="translated">özellikler</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app-routing.module.ts</context>
           <context context-type="linenumber">10</context>
@@ -331,7 +331,7 @@
       </trans-unit>
       <trans-unit id="6099902667884446960" datatype="html">
         <source>license</source>
-        <target state="new">license</target>
+        <target state="translated">lisans</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app-routing.module.ts</context>
           <context context-type="linenumber">11</context>
@@ -347,7 +347,7 @@
       </trans-unit>
       <trans-unit id="8566970793924820888" datatype="html">
         <source>markets</source>
-        <target state="new">markets</target>
+        <target state="translated">piyasalar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app-routing.module.ts</context>
           <context context-type="linenumber">12</context>
@@ -375,7 +375,7 @@
       </trans-unit>
       <trans-unit id="9167640275204796639" datatype="html">
         <source>pricing</source>
-        <target state="new">pricing</target>
+        <target state="translated">fiyatlandırma</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app-routing.module.ts</context>
           <context context-type="linenumber">13</context>
@@ -435,7 +435,7 @@
       </trans-unit>
       <trans-unit id="6948811958230386934" datatype="html">
         <source>privacy-policy</source>
-        <target state="new">privacy-policy</target>
+        <target state="translated">gizlilik-politikası</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app-routing.module.ts</context>
           <context context-type="linenumber">14</context>
@@ -451,7 +451,7 @@
       </trans-unit>
       <trans-unit id="5915338689523424386" datatype="html">
         <source>register</source>
-        <target state="new">register</target>
+        <target state="translated">kayıt ol</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app-routing.module.ts</context>
           <context context-type="linenumber">15</context>
@@ -487,7 +487,7 @@
       </trans-unit>
       <trans-unit id="4002166200801232073" datatype="html">
         <source>resources</source>
-        <target state="new">resources</target>
+        <target state="translated">kaynaklar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app-routing.module.ts</context>
           <context context-type="linenumber">16</context>
@@ -631,7 +631,7 @@
       </trans-unit>
       <trans-unit id="41d338980f469b334618a07e799b4aa40fcf4834" datatype="html">
         <source>Personal Finance</source>
-        <target state="new">Personal Finance</target>
+        <target state="translated">Kişisel Finans</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app.component.html</context>
           <context context-type="linenumber">53</context>
@@ -639,7 +639,7 @@
       </trans-unit>
       <trans-unit id="d3ad0babadabfa3e3b7f51637651822f3e56a7b1" datatype="html">
         <source>Markets</source>
-        <target state="new">Markets</target>
+        <target state="translated">Pİyasalar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app.component.html</context>
           <context context-type="linenumber">56</context>
@@ -659,7 +659,7 @@
       </trans-unit>
       <trans-unit id="452ef1b96854fe05618303ee601f8fed3b866c9f" datatype="html">
         <source>Resources</source>
-        <target state="new">Resources</target>
+        <target state="translated">Pİyasalar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app.component.html</context>
           <context context-type="linenumber">58</context>
@@ -679,7 +679,7 @@
       </trans-unit>
       <trans-unit id="004b222ff9ef9dd4771b777950ca1d0e4cd4348a" datatype="html">
         <source>About</source>
-        <target state="new">About</target>
+        <target state="translated">Hakkında</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app.component.html</context>
           <context context-type="linenumber">64</context>
@@ -695,7 +695,7 @@
       </trans-unit>
       <trans-unit id="013acfd8797bf5ade4a15c71fa24178f913c4cae" datatype="html">
         <source>Blog</source>
-        <target state="new">Blog</target>
+        <target state="translated">Blog</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app.component.html</context>
           <context context-type="linenumber">66</context>
@@ -767,7 +767,7 @@
       </trans-unit>
       <trans-unit id="994e6a27b92ba37201e3bb9f8ae312f2a46b5b39" datatype="html">
         <source>Changelog</source>
-        <target state="new">Changelog</target>
+        <target state="tranlated">Değişiklik Günlüğü</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app.component.html</context>
           <context context-type="linenumber">69</context>
@@ -779,7 +779,7 @@
       </trans-unit>
       <trans-unit id="6cdb1fea93d77c07950c0c76c6e0ad79ebbef084" datatype="html">
         <source>Features</source>
-        <target state="new">Features</target>
+        <target state="tranlated">Özellikler</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app.component.html</context>
           <context context-type="linenumber">71</context>
@@ -795,7 +795,7 @@
       </trans-unit>
       <trans-unit id="6992d42edf46c12a4a9ecb3b7a46761a967c8ee1" datatype="html">
         <source>Frequently Asked Questions (FAQ)</source>
-        <target state="new">Frequently Asked Questions (FAQ)</target>
+        <target state="translated">Sıkça Sorulan Sorular (SSS)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app.component.html</context>
           <context context-type="linenumber">74</context>
@@ -803,7 +803,7 @@
       </trans-unit>
       <trans-unit id="15bdfa7e753e80e9f158a0d23194cb33eb63088f" datatype="html">
         <source>License</source>
-        <target state="new">License</target>
+        <target state="translated">Lisans</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/app.component.html</context>
           <context context-type="linenumber">78</context>
