@@ -2299,7 +2299,7 @@
       </trans-unit>
       <trans-unit id="71c2ec88fc3953a1db6cfca218173fcf489fa803" datatype="html">
         <source>Setup your accounts</source>
-        <target state="new">Setup your accounts</target>
+        <target state="translated">Hesaplarınızı kurun</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/home-overview/home-overview.html</context>
           <context context-type="linenumber">17</context>
@@ -2307,7 +2307,7 @@
       </trans-unit>
       <trans-unit id="43cc09795191db2dc5925aed2b8f920e1822e13f" datatype="html">
         <source>Get a comprehensive financial overview by adding your bank and brokerage accounts.</source>
-        <target state="new">Get a comprehensive financial overview by adding your bank and brokerage accounts.</target>
+        <target state="translated">Banka ve yatırım hesaplarınızı ekleyerek kapsamlı finansal durumunuzu görün.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/home-overview/home-overview.html</context>
           <context context-type="linenumber">19,20</context>
@@ -2315,7 +2315,7 @@
       </trans-unit>
       <trans-unit id="4747213591a189a98d5aface48f2755f863025a4" datatype="html">
         <source>Capture your activities</source>
-        <target state="new">Capture your activities</target>
+        <target state="translated">İşlemlerinizi kaydedin</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/home-overview/home-overview.html</context>
           <context context-type="linenumber">26</context>
@@ -2323,7 +2323,7 @@
       </trans-unit>
       <trans-unit id="804b8810cfbf317424a9fd6387ad57ec5bec972c" datatype="html">
         <source>Record your investment activities to keep your portfolio up to date.</source>
-        <target state="new">Record your investment activities to keep your portfolio up to date.</target>
+        <target state="translated">Yatırım işlemlerinizi kaydederek portföyünüzü güncel tutun.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/home-overview/home-overview.html</context>
           <context context-type="linenumber">28,29</context>
@@ -2331,7 +2331,7 @@
       </trans-unit>
       <trans-unit id="3d0333063dd1cd5062db56f859be74bdfb25a7f3" datatype="html">
         <source>Monitor and analyze your portfolio</source>
-        <target state="new">Monitor and analyze your portfolio</target>
+        <target state="translated">Portföyünüzü izleyin ve analiz edin.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/home-overview/home-overview.html</context>
           <context context-type="linenumber">35</context>
@@ -2339,7 +2339,7 @@
       </trans-unit>
       <trans-unit id="8bcb7e0eac9c406765fadda3238974f271facce6" datatype="html">
         <source>Track your progress in real-time with comprehensive analysis and insights.</source>
-        <target state="new">Track your progress in real-time with comprehensive analysis and insights.</target>
+        <target state="translated">Kapsamlı analiz ve içgörülerle ilerleme durumunuzu gerçek zamanlı olarak takip edin.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/home-overview/home-overview.html</context>
           <context context-type="linenumber">37,38</context>
@@ -2347,7 +2347,7 @@
       </trans-unit>
       <trans-unit id="1bdfdbf86e61060cf785b6bd53692b47c9afec63" datatype="html">
         <source>Setup accounts</source>
-        <target state="new">Setup accounts</target>
+        <target state="translated">Hesaplarınızı kurun</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/home-overview/home-overview.html</context>
           <context context-type="linenumber">50</context>
@@ -2355,7 +2355,7 @@
       </trans-unit>
       <trans-unit id="49af37bcd0c34e88ab989641e52ef92f3fb56e06" datatype="html">
         <source>Add activity</source>
-        <target state="new">Add activity</target>
+        <target state="translated">İşlem ekle.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/home-overview/home-overview.html</context>
           <context context-type="linenumber">58</context>
@@ -2367,7 +2367,7 @@
       </trans-unit>
       <trans-unit id="3041670542776846470" datatype="html">
         <source>This feature requires a subscription.</source>
-        <target state="new">This feature requires a subscription.</target>
+        <target state="translated">Bu özellik için abonelik gereklidir.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/home-summary/home-summary.component.ts</context>
           <context context-type="linenumber">112</context>
@@ -2379,7 +2379,7 @@
       </trans-unit>
       <trans-unit id="5499742151525073097" datatype="html">
         <source>Upgrade Plan</source>
-        <target state="new">Upgrade Plan</target>
+        <target state="translated">Aboneliğini Yükseltiniz</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/home-summary/home-summary.component.ts</context>
           <context context-type="linenumber">114</context>
@@ -2391,7 +2391,7 @@
       </trans-unit>
       <trans-unit id="a8233de047500bf0f0d9f9f1712ddb071501a283" datatype="html">
         <source>Summary</source>
-        <target state="new">Summary</target>
+        <target state="translated">Özet</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/home-summary/home-summary.html</context>
           <context context-type="linenumber">2</context>
@@ -2399,7 +2399,7 @@
       </trans-unit>
       <trans-unit id="112783260724635106" datatype="html">
         <source>Total Amount</source>
-        <target state="new">Total Amount</target>
+        <target state="translated">Toplam Tutar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/investment-chart/investment-chart.component.ts</context>
           <context context-type="linenumber">182</context>
@@ -2407,7 +2407,7 @@
       </trans-unit>
       <trans-unit id="8192718423057883427" datatype="html">
         <source>Savings Rate</source>
-        <target state="new">Savings Rate</target>
+        <target state="translated">Tasarruf Oranı</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/investment-chart/investment-chart.component.ts</context>
           <context context-type="linenumber">248</context>
@@ -2415,7 +2415,7 @@
       </trans-unit>
       <trans-unit id="6a95e051c4fd80012488effb15d2842b2155ae5e" datatype="html">
         <source>Security Token</source>
-        <target state="new">Security Token</target>
+        <target state="translated">Güvenlik Jetonu</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/login-with-access-token-dialog/login-with-access-token-dialog.html</context>
           <context context-type="linenumber">11</context>
@@ -2427,7 +2427,7 @@
       </trans-unit>
       <trans-unit id="053e81597467a642e04109eebe934c84e6a1f467" datatype="html">
         <source>or</source>
-        <target state="new">or</target>
+        <target state="translated">veya</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/login-with-access-token-dialog/login-with-access-token-dialog.html</context>
           <context context-type="linenumber">31</context>
