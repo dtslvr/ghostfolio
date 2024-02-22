@@ -91,16 +91,18 @@ export class MarketDataService {
   }
 
   public async marketDataItems(params: {
+    cursor?: Prisma.MarketDataWhereUniqueInput;
+    distinct?: Prisma.MarketDataScalarFieldEnum[];
+    orderBy?: Prisma.MarketDataOrderByWithRelationInput;
     select?: Prisma.MarketDataSelectScalar;
     skip?: number;
     take?: number;
-    cursor?: Prisma.MarketDataWhereUniqueInput;
     where?: Prisma.MarketDataWhereInput;
-    orderBy?: Prisma.MarketDataOrderByWithRelationInput;
   }): Promise<MarketData[]> {
-    const { select, skip, take, cursor, where, orderBy } = params;
+    const { cursor, distinct, orderBy, select, skip, take, where } = params;
 
     return this.prismaService.marketData.findMany({
+      distinct,
       select,
       cursor,
       orderBy,

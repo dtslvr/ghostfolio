@@ -11,7 +11,7 @@ import {
   IDataProviderHistoricalResponse,
   IDataProviderResponse
 } from '@ghostfolio/api/services/interfaces/interfaces';
-import { PrismaService } from '@ghostfolio/api/services/prisma/prisma.service';
+import { MarketDataService } from '@ghostfolio/api/services/market-data/market-data.service';
 import { SymbolProfileService } from '@ghostfolio/api/services/symbol-profile/symbol-profile.service';
 import {
   DATE_FORMAT,
@@ -35,7 +35,7 @@ import jsonpath from 'jsonpath';
 export class ManualService implements DataProviderInterface {
   public constructor(
     private readonly configurationService: ConfigurationService,
-    private readonly prismaService: PrismaService,
+    private readonly marketDataService: MarketDataService,
     private readonly symbolProfileService: SymbolProfileService
   ) {}
 
@@ -153,7 +153,7 @@ export class ManualService implements DataProviderInterface {
         })
       );
 
-      const marketData = await this.prismaService.marketData.findMany({
+      const marketData = await this.marketDataService.marketDataItems({
         distinct: ['symbol'],
         orderBy: {
           date: 'desc'
@@ -192,7 +192,7 @@ export class ManualService implements DataProviderInterface {
   public async search({
     query
   }: GetSearchParams): Promise<{ items: LookupItem[] }> {
-    let items = await this.prismaService.symbolProfile.findMany({
+    let items = await this.symbolProfileService.symbolProfiles({
       select: {
         assetClass: true,
         assetSubClass: true,

@@ -86,6 +86,28 @@ export class SymbolProfileService {
       .then((symbolProfiles) => this.getSymbols(symbolProfiles));
   }
 
+  public async symbolProfiles(params: {
+    cursor?: Prisma.SymbolProfileWhereUniqueInput;
+    distinct?: Prisma.SymbolProfileScalarFieldEnum[];
+    orderBy?: Prisma.SymbolProfileOrderByWithRelationInput;
+    select?: Prisma.SymbolProfileSelectScalar;
+    skip?: number;
+    take?: number;
+    where?: Prisma.SymbolProfileWhereInput;
+  }): Promise<SymbolProfile[]> {
+    const { cursor, distinct, orderBy, select, skip, take, where } = params;
+
+    return this.prismaService.symbolProfile.findMany({
+      distinct,
+      select,
+      cursor,
+      orderBy,
+      skip,
+      take,
+      where
+    });
+  }
+
   public updateSymbolProfile({
     assetClass,
     assetSubClass,

@@ -11,7 +11,6 @@ import {
   IDataProviderHistoricalResponse,
   IDataProviderResponse
 } from '@ghostfolio/api/services/interfaces/interfaces';
-import { PrismaService } from '@ghostfolio/api/services/prisma/prisma.service';
 import { SymbolProfileService } from '@ghostfolio/api/services/symbol-profile/symbol-profile.service';
 import { DATE_FORMAT, parseDate } from '@ghostfolio/common/helper';
 import { DataProviderInfo } from '@ghostfolio/common/interfaces';
@@ -25,7 +24,6 @@ import { GoogleSpreadsheet } from 'google-spreadsheet';
 export class GoogleSheetsService implements DataProviderInterface {
   public constructor(
     private readonly configurationService: ConfigurationService,
-    private readonly prismaService: PrismaService,
     private readonly symbolProfileService: SymbolProfileService
   ) {}
 
@@ -158,7 +156,7 @@ export class GoogleSheetsService implements DataProviderInterface {
   public async search({
     query
   }: GetSearchParams): Promise<{ items: LookupItem[] }> {
-    const items = await this.prismaService.symbolProfile.findMany({
+    const items = await this.symbolProfileService.symbolProfiles({
       select: {
         assetClass: true,
         assetSubClass: true,
