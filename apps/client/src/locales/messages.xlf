@@ -1400,7 +1400,7 @@
         <source>Do you really want to delete this asset profile?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/admin-market-data/admin-market-data.service.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4550487415324294802" datatype="html">
@@ -6086,7 +6086,7 @@
         <source>Do you really want to delete these profiles?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/admin-market-data/admin-market-data.service.ts</context>
-          <context context-type="linenumber">67</context>
+          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5a6b8dff75bad9c9ea5e010bd0d34beabd8ef3a2" datatype="html">
@@ -6100,7 +6100,7 @@
         <source>Oops! Could not delete profiles.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/admin-market-data/admin-market-data.service.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="829826868886560502" datatype="html">
