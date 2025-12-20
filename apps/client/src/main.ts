@@ -3,10 +3,22 @@ import { filterGlobalPermissions } from '@ghostfolio/common/permissions';
 import { GfNotificationModule } from '@ghostfolio/ui/notifications';
 
 import { Platform } from '@angular/cdk/platform';
+import { registerLocaleData } from '@angular/common';
 import {
   provideHttpClient,
   withInterceptorsFromDi
 } from '@angular/common/http';
+import localeCa from '@angular/common/locales/ca';
+import localeDe from '@angular/common/locales/de';
+import localeEs from '@angular/common/locales/es';
+import localeFr from '@angular/common/locales/fr';
+import localeIt from '@angular/common/locales/it';
+import localeNl from '@angular/common/locales/nl';
+import localePl from '@angular/common/locales/pl';
+import localePt from '@angular/common/locales/pt';
+import localeTr from '@angular/common/locales/tr';
+import localeUk from '@angular/common/locales/uk';
+import localeZh from '@angular/common/locales/zh';
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import {
   DateAdapter,
@@ -55,6 +67,18 @@ import { environment } from './environments/environment';
   if (environment.production) {
     enableProdMode();
   }
+
+  registerLocaleData(localeCa);
+  registerLocaleData(localeDe);
+  registerLocaleData(localeEs);
+  registerLocaleData(localeFr);
+  registerLocaleData(localeIt);
+  registerLocaleData(localeNl);
+  registerLocaleData(localePl);
+  registerLocaleData(localePt);
+  registerLocaleData(localeTr);
+  registerLocaleData(localeUk);
+  registerLocaleData(localeZh);
 
   await bootstrapApplication(GfAppComponent, {
     providers: [
