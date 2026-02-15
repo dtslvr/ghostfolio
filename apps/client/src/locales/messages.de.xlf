@@ -7850,7 +7850,7 @@
       </trans-unit>
       <trans-unit id="5342678948449903412" datatype="html">
         <source>Sync Demo User Account</source>
-        <target state="translate">Synchronisiere Demo Benutzerkonto</target>
+        <target state="translated">Synchronisiere Demo Benutzerkonto</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/components/admin-overview/admin-overview.html</context>
           <context context-type="linenumber">195</context>
@@ -7882,7 +7882,7 @@
       </trans-unit>
       <trans-unit id="rule.feeRatioInitialInvestment" datatype="html">
         <source>Fee Ratio (legacy)</source>
-        <target state="new">Gebührenverhältnis</target>
+        <target state="translated">Gebührenverhältnis (veraltet)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/pages/i18n/i18n-page.html</context>
           <context context-type="linenumber">152</context>
@@ -7906,7 +7906,7 @@
       </trans-unit>
       <trans-unit id="rule.feeRatioTotalInvestmentVolume" datatype="html">
         <source>Fee Ratio</source>
-        <target state="new">Fee Ratio</target>
+        <target state="translated">Gebührenverhältnis</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/pages/i18n/i18n-page.html</context>
           <context context-type="linenumber">161</context>
@@ -7914,7 +7914,7 @@
       </trans-unit>
       <trans-unit id="rule.feeRatioTotalInvestmentVolume.false" datatype="html">
         <source>The fees do exceed ${thresholdMax}% of your total investment volume (${feeRatio}%)</source>
-        <target state="new">The fees do exceed ${thresholdMax}% of your total investment volume (${feeRatio}%)</target>
+        <target state="translated">Die Gebühren übersteigen ${thresholdMax}% deines gesamten Investitionsvolumens (${feeRatio}%)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/pages/i18n/i18n-page.html</context>
           <context context-type="linenumber">163</context>
@@ -7922,7 +7922,7 @@
       </trans-unit>
       <trans-unit id="rule.feeRatioTotalInvestmentVolume.true" datatype="html">
         <source>The fees do not exceed ${thresholdMax}% of your total investment volume (${feeRatio}%)</source>
-        <target state="new">The fees do not exceed ${thresholdMax}% of your total investment volume (${feeRatio}%)</target>
+        <target state="translated">Die Gebühren übersteigen ${thresholdMax}% deines gesamten Investitionsvolumens (${feeRatio}%) nicht</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/client/src/app/pages/i18n/i18n-page.html</context>
           <context context-type="linenumber">167</context>
