@@ -613,17 +613,15 @@ export class PortfolioService {
 
       holdings[symbol] = {
         activitiesCount,
-        currency,
         markets,
         marketsAdvanced,
         marketPrice,
-        symbol,
         tags,
         allocationInPercentage: filteredValueInBaseCurrency.eq(0)
           ? 0
           : valueInBaseCurrency.div(filteredValueInBaseCurrency).toNumber(),
-        assetClass: assetProfile.assetClass,
         assetProfile: {
+          currency,
           assetClass: assetProfile.assetClass,
           assetSubClass: assetProfile.assetSubClass,
           countries: assetProfile.countries,
@@ -644,9 +642,6 @@ export class PortfolioService {
           symbol: assetProfile.symbol,
           url: assetProfile.url
         },
-        assetSubClass: assetProfile.assetSubClass,
-        countries: assetProfile.countries,
-        dataSource: assetProfile.dataSource,
         dateOfFirstActivity: parseDate(dateOfFirstActivity),
         dividend: dividend?.toNumber() ?? 0,
         grossPerformance: grossPerformance?.toNumber() ?? 0,
@@ -655,19 +650,7 @@ export class PortfolioService {
           grossPerformancePercentageWithCurrencyEffect?.toNumber() ?? 0,
         grossPerformanceWithCurrencyEffect:
           grossPerformanceWithCurrencyEffect?.toNumber() ?? 0,
-        holdings: assetProfile.holdings.map(
-          ({ allocationInPercentage, name }) => {
-            return {
-              allocationInPercentage,
-              name,
-              valueInBaseCurrency: valueInBaseCurrency
-                .mul(allocationInPercentage)
-                .toNumber()
-            };
-          }
-        ),
         investment: investment.toNumber(),
-        name: assetProfile.name,
         netPerformance: netPerformance?.toNumber() ?? 0,
         netPerformancePercent: netPerformancePercentage?.toNumber() ?? 0,
         netPerformancePercentWithCurrencyEffect:
@@ -677,8 +660,6 @@ export class PortfolioService {
         netPerformanceWithCurrencyEffect:
           netPerformanceWithCurrencyEffectMap?.[dateRange]?.toNumber() ?? 0,
         quantity: quantity.toNumber(),
-        sectors: assetProfile.sectors,
-        url: assetProfile.url,
         valueInBaseCurrency: valueInBaseCurrency.toNumber()
       };
     }
@@ -1446,8 +1427,8 @@ export class PortfolioService {
     for (const [, position] of Object.entries(holdings)) {
       const value = position.valueInBaseCurrency;
 
-      if (position.assetClass !== AssetClass.LIQUIDITY) {
-        if (position.countries.length > 0) {
+      if (position.assetProfile.assetClass !== AssetClass.LIQUIDITY) {
+        if (position.assetProfile.countries.length > 0) {
           markets.developedMarkets.valueInBaseCurrency +=
             position.markets.developedMarkets * value;
           markets.emergingMarkets.valueInBaseCurrency +=
@@ -1693,14 +1674,12 @@ export class PortfolioService {
     currency: string;
   }): PortfolioPosition {
     return {
-      currency,
       activitiesCount: 0,
       allocationInPercentage: 0,
-      assetClass: AssetClass.LIQUIDITY,
-      assetSubClass: AssetSubClass.CASH,
       assetProfile: {
         assetClass: AssetClass.LIQUIDITY,
         assetSubClass: AssetSubClass.CASH,
+        currency,
         countries: [],
         dataSource: undefined,
         holdings: [],
@@ -1708,25 +1687,19 @@ export class PortfolioService {
         sectors: [],
         symbol: currency
       },
-      countries: [],
-      dataSource: undefined,
       dateOfFirstActivity: undefined,
       dividend: 0,
       grossPerformance: 0,
       grossPerformancePercent: 0,
       grossPerformancePercentWithCurrencyEffect: 0,
       grossPerformanceWithCurrencyEffect: 0,
-      holdings: [],
       investment: balance,
       marketPrice: 0,
-      name: currency,
       netPerformance: 0,
       netPerformancePercent: 0,
       netPerformancePercentWithCurrencyEffect: 0,
       netPerformanceWithCurrencyEffect: 0,
       quantity: 0,
-      sectors: [],
-      symbol: currency,
       tags: [],
       valueInBaseCurrency: balance
     };
