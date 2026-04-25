@@ -92,11 +92,13 @@ export class AiService {
       .map(
         ({
           allocationInPercentage,
-          assetClass,
-          assetSubClass,
-          currency,
-          name: label,
-          symbol
+          assetProfile: {
+            assetClass,
+            assetSubClass,
+            currency,
+            name: label,
+            symbol
+          }
         }) => {
           return AiService.HOLDINGS_TABLE_COLUMN_DEFINITIONS.reduce(
             (row, { key, name }) => {
