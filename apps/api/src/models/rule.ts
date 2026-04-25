@@ -41,9 +41,7 @@ export abstract class Rule<T extends RuleSettings> implements RuleInterface<T> {
 
   public groupCurrentHoldingsByAttribute(
     holdings: PortfolioPosition[],
-    attribute:
-      | keyof PortfolioPosition
-      | `assetProfile.${Extract<keyof PortfolioPosition['assetProfile'], string>}`,
+    attribute: `assetProfile.${Extract<keyof PortfolioPosition['assetProfile'], string>}`,
     baseCurrency: string
   ) {
     return Object.entries(groupBy(holdings, attribute)).map(
