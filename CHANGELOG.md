@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Integrated a theme switcher into _Storybook_ to support toggling between the light and dark mode
 
+### Changed
+
+- Modernized the layout of the overview tab in the admin control panel
+
 ### Fixed
 
 - Optimized the spacing of the logo in the header
