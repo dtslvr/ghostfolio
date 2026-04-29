@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Modernized the layout of the overview tab in the admin control panel
 - Improved the styling of the paginator across various table components
+- Improved the language localization for German (`de`)
 
 ### Fixed
 
