@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improved the styling of the page tabs component on desktop
 - Enabled the _Bull Dashboard_ tab in the admin control panel (experimental)
 - Upgraded `bull-board` from version `7.1.5` to `7.2.1`
+- Upgraded `svgmap` from version `2.19.3` to `2.21.0`
 
 ## 3.10.0 - 2026-06-13
 
