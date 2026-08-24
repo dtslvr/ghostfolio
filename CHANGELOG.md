@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+### Changed
+
+- Improved the historical market data gathering by loading the asset profiles with recent market data in a single database query per run
+
+### Fixed
+
+- Fixed the repeated historical market data gathering for instances running in a time zone behind UTC
+- Fixed the response of the historical market data gathering for a specific date in the admin control panel
+
 ## 3.60.0 - 2026-08-24
 
 ### Added
