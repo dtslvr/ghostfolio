@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Improved the historical market data gathering by loading the asset profiles with recent market data in a single database query per run
+- Improved the response of the historical market data gathering for a specific date in the admin control panel by returning a 404 status code if no market data is available
 
 ### Fixed
 
