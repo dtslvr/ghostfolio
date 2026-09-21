@@ -1221,6 +1221,7 @@ export class PortfolioService {
           currentNetWorth: 0,
           currentValueInBaseCurrency: 0,
           dividendInBaseCurrency: 0,
+          dividendPercentage: 0,
           dividendPercentageWithCurrencyEffect: 0,
           netPerformance: 0,
           netPerformancePercentage: 0,
@@ -1254,6 +1255,7 @@ export class PortfolioService {
 
     const {
       dividendInBaseCurrency,
+      dividendInPercentage,
       dividendInPercentageWithCurrencyEffect,
       netPerformance,
       netPerformanceInPercentage,
@@ -1265,6 +1267,7 @@ export class PortfolioService {
       valueWithCurrencyEffect
     } = chart?.at(-1) ?? {
       dividendInBaseCurrency: 0,
+      dividendInPercentage: 0,
       dividendInPercentageWithCurrencyEffect: 0,
       netPerformance: 0,
       netPerformanceInPercentage: 0,
@@ -1288,6 +1291,7 @@ export class PortfolioService {
         totalInvestmentValueWithCurrencyEffect,
         currentNetWorth: netWorth,
         currentValueInBaseCurrency: valueWithCurrencyEffect,
+        dividendPercentage: dividendInPercentage,
         dividendPercentageWithCurrencyEffect:
           dividendInPercentageWithCurrencyEffect,
         netPerformancePercentage: netPerformanceInPercentage,
@@ -2134,6 +2138,7 @@ export class PortfolioService {
 
     const {
       currentValueInBaseCurrency,
+      dividendPercentage,
       dividendPercentageWithCurrencyEffect,
       netPerformance,
       netPerformancePercentage,
@@ -2234,6 +2239,7 @@ export class PortfolioService {
       cash,
       currentValueInBaseCurrency,
       dateOfFirstActivity,
+      dividendPercentage,
       dividendPercentageWithCurrencyEffect,
       excludedAccountsAndActivities,
       netPerformance,
