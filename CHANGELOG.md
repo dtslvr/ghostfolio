@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added the dividend performance to the analysis page (experimental)
 
+### Changed
+
+- Changed the performance calculation to include the dividends (total return)
+
 ## 3.72.0 - 2026-09-20
 
 ### Added
