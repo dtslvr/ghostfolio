@@ -32,6 +32,27 @@
       [showXAxis]="true"
       [showYAxis]="true"
     />
+
+    @if (data.hasPermissionToAccessAdminControl) {
+      <hr />
+      <div class="row">
+        <div class="col">
+          <a
+            mat-stroked-button
+            [routerLink]="
+              routerLinkAdminControlMarketDataUpdate(
+                data.dataSource,
+                data.symbol
+              )
+            "
+            (click)="onClose()"
+            ><ion-icon class="me-1" name="create-outline" /><span i18n
+              >Manage Asset Profile</span
+            >...</a
+          >
+        </div>
+      </div>
+    }
   </div>
 </div>
 

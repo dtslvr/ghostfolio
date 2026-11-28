@@ -9,6 +9,7 @@ import {
   Benchmark,
   User
 } from '@ghostfolio/common/interfaces';
+import { hasPermission, permissions } from '@ghostfolio/common/permissions';
 import { NotificationService } from '@ghostfolio/ui/notifications';
 
 import {
@@ -42,7 +43,10 @@ import { translate } from '../i18n';
 import { GfTrendIndicatorComponent } from '../trend-indicator/trend-indicator.component';
 import { GfValueComponent } from '../value/value.component';
 import { GfBenchmarkDetailDialogComponent } from './benchmark-detail-dialog/benchmark-detail-dialog.component';
-import { BenchmarkDetailDialogParams } from './benchmark-detail-dialog/interfaces/interfaces';
+import {
+  BenchmarkDetailDialogParams,
+  BenchmarkDetailDialogResult
+} from './benchmark-detail-dialog/interfaces/interfaces';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -170,13 +174,18 @@ export class GfBenchmarkComponent implements OnInit {
   }: AssetProfileIdentifier) {
     const dialogRef = this.dialog.open<
       GfBenchmarkDetailDialogComponent,
-      BenchmarkDetailDialogParams
+      BenchmarkDetailDialogParams,
+      BenchmarkDetailDialogResult
     >(GfBenchmarkDetailDialogComponent, {
       data: {
         dataSource,
         symbol,
         colorScheme: this.user()?.settings?.colorScheme,
         deviceType: this.deviceType(),
+        hasPermissionToAccessAdminControl: hasPermission(
+          this.user()?.permissions,
+          permissions.accessAdminControl
+        ),
         locale: this.locale()
       },
       height: this.deviceType() === 'mobile' ? '98dvh' : undefined,
@@ -188,7 +197,11 @@ export class GfBenchmarkComponent implements OnInit {
     dialogRef
       .afterClosed()
       .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe(() => {
+      .subscribe((result) => {
+        if (result?.isNavigating) {
+          return;
+        }
+
         this.router.navigate(['.'], { relativeTo: this.route });
       });
   }
