@@ -73,11 +73,11 @@ export class GfBenchmarkDetailDialogComponent implements OnInit {
     private changeDetectorRef: ChangeDetectorRef,
     @Inject(MAT_DIALOG_DATA) public data: BenchmarkDetailDialogParams,
     private dataService: DataService,
+    private destroyRef: DestroyRef,
     public dialogRef: MatDialogRef<
       GfBenchmarkDetailDialogComponent,
       BenchmarkDetailDialogResult
     >,
-    private destroyRef: DestroyRef,
     private router: Router
   ) {
     this.router.events
